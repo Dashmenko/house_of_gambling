@@ -1,11 +1,12 @@
 document.getElementById("language").onclick = function () {
-    let currentLanguage = document.getElementById("language").children[1].innerText;
+    let currentLanguage = document.getElementById("language").innerText;
 
     let newLanguage = "EN";
     if (currentLanguage === "EN") {
         newLanguage = "RU";
     }
-    document.getElementById("language").children[1].innerText = newLanguage;
+
+    document.getElementById("language").innerHTML = '<img class="icon-planet" src="img/icon-planet.svg" alt="icon-planet">' + newLanguage;
 }
 
 // scroll
